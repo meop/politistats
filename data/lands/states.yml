@@ -1,0 +1,151 @@
+---
+- abbr: al
+  bday: !!timestamp 1819-12-14
+  name: alabama
+- abbr: ak
+  bday: !!timestamp 1959-01-03
+  name: alaska
+- abbr: az
+  bday: !!timestamp 1912-02-14
+  name: arizona
+- abbr: ar
+  bday: !!timestamp 1836-06-15
+  name: arkansas
+- abbr: ca
+  bday: !!timestamp 1850-09-09
+  name: california
+- abbr: co
+  bday: !!timestamp 1876-08-01
+  name: colorado
+- abbr: ct
+  bday: !!timestamp 1788-01-09
+  name: connecticut
+- abbr: de
+  bday: !!timestamp 1787-12-07
+  name: delaware
+- abbr: fl
+  bday: !!timestamp 1845-03-03
+  name: florida
+- abbr: ga
+  bday: !!timestamp 1788-01-02
+  name: georgia
+- abbr: hi
+  bday: !!timestamp 1959-08-21
+  name: hawaii
+- abbr: id
+  bday: !!timestamp 1890-07-03
+  name: idaho
+- abbr: il
+  bday: !!timestamp 1818-12-03
+  name: illinois
+- abbr: in
+  bday: !!timestamp 1816-12-11
+  name: indiana
+- abbr: ia
+  bday: !!timestamp 1846-12-28
+  name: iowa
+- abbr: ks
+  bday: !!timestamp 1861-01-29
+  name: kansas
+- abbr: ky
+  bday: !!timestamp 1792-06-01
+  name: kentucky
+- abbr: la
+  bday: !!timestamp 1812-04-30
+  name: louisiana
+- abbr: me
+  bday: !!timestamp 1820-03-15
+  name: maine
+- abbr: md
+  bday: !!timestamp 1788-04-28
+  name: maryland
+- abbr: ma
+  bday: !!timestamp 1788-02-06
+  name: massachusetts
+- abbr: mi
+  bday: !!timestamp 1837-01-26
+  name: michigan
+- abbr: mn
+  bday: !!timestamp 1858-05-11
+  name: minnesota
+- abbr: ms
+  bday: !!timestamp 1817-12-10
+  name: mississippi
+- abbr: mo
+  bday: !!timestamp 1821-08-10
+  name: missouri
+- abbr: mt
+  bday: !!timestamp 1889-11-08
+  name: montana
+- abbr: ne
+  bday: !!timestamp 1867-03-01
+  name: nebraska
+- abbr: nv
+  bday: !!timestamp 1864-10-31
+  name: nevada
+- abbr: nh
+  bday: !!timestamp 1788-06-21
+  name: new_hampshire
+- abbr: nj
+  bday: !!timestamp 1787-12-18
+  name: new_jersey
+- abbr: nm
+  bday: !!timestamp 1912-01-06
+  name: new_mexico
+- abbr: ny
+  bday: !!timestamp 1788-07-26
+  name: new_york
+- abbr: nc
+  bday: !!timestamp 1789-11-21
+  name: north_carolina
+- abbr: nd
+  bday: !!timestamp 1889-11-02
+  name: north_dakota
+- abbr: oh
+  bday: !!timestamp 1803-03-01
+  name: ohio
+- abbr: ok
+  bday: !!timestamp 1907-11-16
+  name: oklahoma
+- abbr: or
+  bday: !!timestamp 1859-02-14
+  name: oregon
+- abbr: pa
+  bday: !!timestamp 1787-12-12
+  name: pennsylvania
+- abbr: ri
+  bday: !!timestamp 1790-05-29
+  name: rhode_island
+- abbr: sc
+  bday: !!timestamp 1788-05-23
+  name: south_carolina
+- abbr: sd
+  bday: !!timestamp 1889-11-02
+  name: south_dakota
+- abbr: tn
+  bday: !!timestamp 1796-06-01
+  name: tennessee
+- abbr: tx
+  bday: !!timestamp 1845-12-29
+  name: texas
+- abbr: ut
+  bday: !!timestamp 1896-01-04
+  name: utah
+- abbr: vt
+  bday: !!timestamp 1791-03-04
+  name: vermont
+- abbr: va
+  bday: !!timestamp 1788-06-25
+  name: virginia
+- abbr: wa
+  bday: !!timestamp 1889-11-11
+  name: washington
+- abbr: wv
+  bday: !!timestamp 1863-06-20
+  name: west_virginia
+- abbr: wi
+  bday: !!timestamp 1848-05-29
+  name: wisconsin
+- abbr: wy
+  bday: !!timestamp 1890-07-10
+  name: wyoming

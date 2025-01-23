@@ -1,0 +1,4 @@
+---
+- abbr: dc
+  bday: !!timestamp 1790-07-16
+  name: district_of_columbia

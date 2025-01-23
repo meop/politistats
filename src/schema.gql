@@ -1,0 +1,35 @@
+scalar Date
+
+type Land {
+  abbr: String!
+  bday: Date!
+  name: String!
+}
+
+type Law {
+  bday: Date!
+  detail: LevelDetail!
+  land: Land!
+}
+
+type Level {
+  bday: Date!
+  dday: Date
+  details: [LevelDetail!]!
+}
+
+type LevelDetail {
+  index: Int!
+  name: String!
+  notes: [String]
+}
+
+type Rule {
+  bday: Date!
+  lands: [String!]!
+  level: Int
+}
+
+type Query {
+  laws(topic: String!): [Law]
+}

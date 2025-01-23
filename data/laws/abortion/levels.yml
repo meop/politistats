@@ -1,0 +1,62 @@
+---
+- bday: !!timestamp 1960-01-01
+  dday: !!timestamp 1973-01-21
+  details:
+    - index: 0
+      name: illegal
+    - index: 1
+      name: legal to cases of danger to woman's life
+    - index: 2
+      name: legal in cases of rape
+    - index: 3
+      name: legal in cases of danger to woman's health
+    - index: 4
+      name: legal in cases of danger to woman's health, rape or incest, or likely damaged fetus
+    - index: 5
+      name: legal in general
+- bday: !!timestamp 1973-01-22
+  dday: !!timestamp 2022-06-24
+  details:
+    - index: 0
+      name: roe_v_wade
+      notes:
+        - first trimester, ok for woman to choose, must be performed by licensed physician
+        - second trimester, medical regulations allowed by states, which put woman's health first
+        - third trimester, states may legally prohibit all abortions except where necessary to protect the woman's life or health
+- bday: !!timestamp 2022-06-25
+  details:
+    - index: 0
+      name: illegal
+      notes:
+        - with exceptions
+    - index: 1
+      name: legal
+      notes:
+        - but no providers
+    - index: 2
+      name: legal before embryonic cardiac-cell activity detectability
+      notes:
+        - in the 5th-6th week LMP, 2-3 weeks from implantation
+    - index: 3
+      name: legal through 12 weeks
+    - index: 4
+      name: legal through 15 weeks, first trimester
+    - index: 5
+      name: legal through 18 weeks
+    - index: 6
+      name: legal through 22 weeks (5 months)
+      notes:
+        - defined in some states as 20 weeks from estimated fertilization
+    - index: 7
+      name: legal before fetal viability
+      notes:
+        - ~ 23 weeks LMP
+    - index: 8
+      name: legal through 24 weeks (5 1/2 months)
+    - index: 9
+      name: legal before third trimester
+      notes:
+        - variously defined as after 27 or 28 weeks LMP
+        - after 24 weeks from implantation, ≈ 27 weeks LMP (massachusetts)
+    - index: 10
+      name: legal at any stage

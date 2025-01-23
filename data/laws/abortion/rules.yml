@@ -1,0 +1,205 @@
+---
+- bday: !!timestamp 1960-01-01
+  lands:
+    - pa
+  level: 0
+- bday: !!timestamp 1960-01-01
+  lands:
+    - az
+    - ct
+    - dc
+    - ia
+    - id
+    - il
+    - in
+    - ky
+    - la
+    - me
+    - mi
+    - mn
+    - mo
+    - mt
+    - nd
+    - ne
+    - nh
+    - nj
+    - nv
+    - oh
+    - ok
+    - ri
+    - sd
+    - tn
+    - tx
+    - ut
+    - vt
+    - wi
+    - wv
+    - wy
+  level: 1
+- bday: !!timestamp 1960-01-01
+  lands:
+    - ms
+  level: 2
+- bday: !!timestamp 1960-01-01
+  lands:
+    - al
+    - ma
+  level: 3
+- bday: !!timestamp 1960-01-01
+  lands:
+    - ar
+    - co
+    - de
+    - fl
+    - ga
+    - ks
+    - md
+    - nc
+    - nm
+    - or
+    - sc
+    - va
+  level: 4
+- bday: !!timestamp 1960-01-01
+  lands:
+    - ak
+    - ca
+    - hi
+    - ny
+    - wa
+  level: 5
+- bday: !!timestamp 1973-01-22
+  lands:
+    - ak
+    - al
+    - ar
+    - az
+    - ca
+    - co
+    - ct
+    - dc
+    - de
+    - fl
+    - ga
+    - hi
+    - ia
+    - id
+    - il
+    - in
+    - ks
+    - ky
+    - la
+    - ma
+    - md
+    - me
+    - mi
+    - mn
+    - mo
+    - ms
+    - mt
+    - nc
+    - nd
+    - ne
+    - nh
+    - nj
+    - nm
+    - nv
+    - ny
+    - oh
+    - ok
+    - or
+    - pa
+    - ri
+    - sc
+    - sd
+    - tn
+    - tx
+    - ut
+    - va
+    - vt
+    - wa
+    - wi
+    - wv
+    - wy
+  level: 0
+- bday: !!timestamp 2022-06-25
+  lands:
+    - al
+    - ar
+    - id
+    - in
+    - ky
+    - la
+    - ms
+    - ok
+    - sd
+    - tn
+    - tx
+    - wv
+  level: 0
+- bday: !!timestamp 2022-06-25
+  lands:
+    - nd
+  level: 1
+- bday: !!timestamp 2022-06-25
+  lands:
+    - fl
+    - ga
+    - ia
+    - sc
+  level: 2
+- bday: !!timestamp 2022-06-25
+  lands:
+    - nc
+    - ne
+  level: 3
+- bday: !!timestamp 2022-06-25
+  lands:
+    - ut
+  level: 5
+- bday: !!timestamp 2022-06-25
+  lands:
+    - ks
+    - wi
+  level: 6
+- bday: !!timestamp 2022-06-25
+  lands:
+    - az
+    - ca
+    - ct
+    - de
+    - hi
+    - il
+    - me
+    - mo
+    - mt
+    - oh
+    - ri
+    - wa
+    - wy
+  level: 7
+- bday: !!timestamp 2022-06-25
+  lands:
+    - nh
+    - nv
+    - ny
+    - pa
+  level: 8
+- bday: !!timestamp 2022-06-25
+  lands:
+    - ma
+    - va
+  level: 9
+- bday: !!timestamp 2022-06-25
+  lands:
+    - ak
+    - co
+    - dc
+    - md
+    - mi
+    - mn
+    - nj
+    - nm
+    - or
+    - vt
+  level: 10
