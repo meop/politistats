@@ -1,0 +1,6 @@
+{
+  "name": "@politistats/ui",
+  "private": true,
+  "type": "module",
+  "module": "src/srv.ts"
+}
