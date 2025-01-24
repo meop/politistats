@@ -3,19 +3,18 @@
   "private": true,
   "type": "module",
   "module": "src/srv.ts",
-  "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.3",
-    "@graphql-codegen/typescript": "^4.1.2",
-    "@graphql-codegen/typescript-resolvers": "^4.4.1"
+  "scripts": {
+    "pre": "graphql-codegen",
+    "dev": "bun run --hot src/srv.ts"
   },
   "dependencies": {
     "graphql": "^16.10.0",
     "graphql-scalars": "^1.24.0",
     "graphql-yoga": "^5.10.10"
   },
-  "scripts": {
-    "prep": "graphql-codegen",
-    "cook": "bun run --hot src/srv.ts",
-    "serve": "bun run src/srv.ts"
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@graphql-codegen/typescript": "^4.1.2",
+    "@graphql-codegen/typescript-resolvers": "^4.4.1"
   }
 }

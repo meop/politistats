@@ -2,5 +2,17 @@
   "name": "@politistats/ui",
   "private": true,
   "type": "module",
-  "module": "src/srv.ts"
+  "module": "src/srv.ts",
+  "scripts": {
+    "dev": "bunx --bun vite dev",
+    "build": "bunx --bun vite build",
+    "preview": "bunx --bun vite preview"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.3"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5",
+    "vite-plugin-solid": "^2.11.0"
+  }
 }

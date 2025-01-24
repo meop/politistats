@@ -1,9 +1,9 @@
-import { promises as fsPromises } from 'fs'
-import { basename as pathBasename, join as pathJoin } from 'path'
+import { promises as fsPromises } from 'node:fs'
+import { basename as pathBasename, join as pathJoin } from 'node:path'
 
 import { parse as yamlParse } from 'yaml'
 
-import { LandModel, LawModel, LevelModel, RuleModel } from './models.ts'
+import type { LandModel, LawModel, LevelModel, RuleModel } from './models.ts'
 
 export interface Data {
   lands: (category?: string) => Promise<Array<LandModel>>
@@ -39,6 +39,10 @@ async function getData<T>(
   return data
 }
 
+function safeFindLast<T>(arr: Array<T>, cond: (arg: T) => boolean) {
+  return arr.filter(cond).slice(-1)[0]
+}
+
 export class DataLoader implements Data {
   lands = (category?: string) =>
     getData<LandModel>('lands', undefined, category)
@@ -53,14 +57,14 @@ export class DataLoader implements Data {
       for (const land of rule.lands) {
         laws.push({
           bday: rule.bday,
-          land: lands.find((l) => l.abbr === land)!,
-          detail: levels
-            .findLast(
-              (l) =>
-                rule.bday >= l.bday &&
-                (!l.dday || rule.bday <= l.dday),
-            )!
-            .details.find((d) => rule.level === d.index)!,
+          land: safeFindLast(lands, l => l.abbr === land),
+          detail: safeFindLast(
+            safeFindLast(
+              levels,
+              l => rule.bday >= l.bday && (!l.dday || rule.bday <= l.dday),
+            ).details,
+            d => rule.level === d.index,
+          ),
         })
       }
     }

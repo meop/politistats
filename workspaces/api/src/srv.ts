@@ -1,10 +1,10 @@
-import { readFileSync } from 'fs'
-import { join as pathJoin } from 'path'
+import { readFileSync } from 'node:fs'
+import { join as pathJoin } from 'node:path'
 
 import { DateResolver } from 'graphql-scalars'
 import { createYoga, createSchema } from 'graphql-yoga'
 
-import { Resolvers } from './resolvers-types.ts'
+import type { Resolvers } from './resolvers-types.ts'
 import { DataLoader } from './data.ts'
 
 const typeDefs = readFileSync(pathJoin(__dirname, 'schema.gql'), 'utf8')
@@ -48,6 +48,7 @@ const yoga = createYoga({
 
 const server = Bun.serve({
   fetch: yoga.fetch,
+  port: process.env.PORT || 3000,
 })
 
 console.info(

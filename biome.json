@@ -11,5 +11,8 @@
       "semicolons": "asNeeded"
     },
     "jsxRuntime": "transparent"
+  },
+  "linter": {
+    "ignore": ["**/*-types.ts"]
   }
 }
