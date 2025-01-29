@@ -2,12 +2,28 @@
 
 ## install
 
-`bun install`
+```sh
+bun install
+```
 
-## generate
+## prep
 
-`bun run generate`
+api:
 
-## run
+```sh
+bun run --filter "./workspaces/api" gen
+```
 
-`bun run ./src/srv.ts`
+## start
+
+api:
+
+```sh
+bun run --filter "./workspaces/api" dev
+```
+
+ui:
+
+```sh
+bun run --filter "./workspaces/ui" dev
+```
