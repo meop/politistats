@@ -12,13 +12,8 @@
     },
     "jsxRuntime": "transparent"
   },
-  "json": {
-    "formatter": {
-      "trailingCommas": "all"
-    }
-  },
   "linter": {
-    "ignore": ["**/*-types.ts"]
+    "ignore": ["**/*types.ts"]
   },
   "overrides": [
     {

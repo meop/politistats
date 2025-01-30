@@ -1,6 +1,4 @@
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
-import { LandModel, LawModel, LevelModel, LevelDetailModel, RuleModel } from './models.ts';
-import { DataContext } from './contexts.ts';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -138,12 +136,12 @@ export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
   Date: ResolverTypeWrapper<Scalars['Date']['output']>;
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
-  Land: ResolverTypeWrapper<LandModel>;
-  Law: ResolverTypeWrapper<LawModel>;
-  Level: ResolverTypeWrapper<LevelModel>;
-  LevelDetail: ResolverTypeWrapper<LevelDetailModel>;
+  Land: ResolverTypeWrapper<Land>;
+  Law: ResolverTypeWrapper<Law>;
+  Level: ResolverTypeWrapper<Level>;
+  LevelDetail: ResolverTypeWrapper<LevelDetail>;
   Query: ResolverTypeWrapper<{}>;
-  Rule: ResolverTypeWrapper<RuleModel>;
+  Rule: ResolverTypeWrapper<Rule>;
   String: ResolverTypeWrapper<Scalars['String']['output']>;
 };
 
@@ -152,12 +150,12 @@ export type ResolversParentTypes = {
   Boolean: Scalars['Boolean']['output'];
   Date: Scalars['Date']['output'];
   Int: Scalars['Int']['output'];
-  Land: LandModel;
-  Law: LawModel;
-  Level: LevelModel;
-  LevelDetail: LevelDetailModel;
+  Land: Land;
+  Law: Law;
+  Level: Level;
+  LevelDetail: LevelDetail;
   Query: {};
-  Rule: RuleModel;
+  Rule: Rule;
   String: Scalars['String']['output'];
 };
 
@@ -165,46 +163,46 @@ export interface DateScalarConfig extends GraphQLScalarTypeConfig<ResolversTypes
   name: 'Date';
 }
 
-export type LandResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['Land'] = ResolversParentTypes['Land']> = {
+export type LandResolvers<ContextType = any, ParentType extends ResolversParentTypes['Land'] = ResolversParentTypes['Land']> = {
   abbr?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   bday?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type LawResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['Law'] = ResolversParentTypes['Law']> = {
+export type LawResolvers<ContextType = any, ParentType extends ResolversParentTypes['Law'] = ResolversParentTypes['Law']> = {
   bday?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   detail?: Resolver<ResolversTypes['LevelDetail'], ParentType, ContextType>;
   land?: Resolver<ResolversTypes['Land'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type LevelResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['Level'] = ResolversParentTypes['Level']> = {
+export type LevelResolvers<ContextType = any, ParentType extends ResolversParentTypes['Level'] = ResolversParentTypes['Level']> = {
   bday?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   dday?: Resolver<Maybe<ResolversTypes['Date']>, ParentType, ContextType>;
   details?: Resolver<Array<ResolversTypes['LevelDetail']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type LevelDetailResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['LevelDetail'] = ResolversParentTypes['LevelDetail']> = {
+export type LevelDetailResolvers<ContextType = any, ParentType extends ResolversParentTypes['LevelDetail'] = ResolversParentTypes['LevelDetail']> = {
   index?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   notes?: Resolver<Maybe<Array<Maybe<ResolversTypes['String']>>>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type QueryResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
+export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   laws?: Resolver<Maybe<Array<Maybe<ResolversTypes['Law']>>>, ParentType, ContextType, RequireFields<QueryLawsArgs, 'topic'>>;
 };
 
-export type RuleResolvers<ContextType = DataContext, ParentType extends ResolversParentTypes['Rule'] = ResolversParentTypes['Rule']> = {
+export type RuleResolvers<ContextType = any, ParentType extends ResolversParentTypes['Rule'] = ResolversParentTypes['Rule']> = {
   bday?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   lands?: Resolver<Array<ResolversTypes['String']>, ParentType, ContextType>;
   level?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type Resolvers<ContextType = DataContext> = {
+export type Resolvers<ContextType = any> = {
   Date?: GraphQLScalarType;
   Land?: LandResolvers<ContextType>;
   Law?: LawResolvers<ContextType>;
@@ -214,3 +212,5 @@ export type Resolvers<ContextType = DataContext> = {
   Rule?: RuleResolvers<ContextType>;
 };
 
+
+export type Date = Scalars["Date"];

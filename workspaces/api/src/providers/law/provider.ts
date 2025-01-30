@@ -1,11 +1,13 @@
 import { promises as fsPromises } from 'node:fs'
 import { basename as pathBasename, join as pathJoin } from 'node:path'
 
+import { Injectable } from 'graphql-modules'
+
 import { parse as yamlParse } from 'yaml'
 
-import type { LandModel, LawModel, LevelModel, RuleModel } from './models.ts'
+import type { LandModel, LawModel, LevelModel, RuleModel } from './data/models'
 
-export interface Data {
+export interface LawData {
   lands: (category?: string) => Promise<Array<LandModel>>
   laws: (topic: string) => Promise<Array<LawModel>>
   levels: (topic: string) => Promise<Array<LevelModel>>
@@ -19,7 +21,7 @@ async function getData<T>(
 ): Promise<Array<T>> {
   const data: Array<T> = []
 
-  const pathParts = [__dirname, '..', 'data', group]
+  const pathParts = [__dirname, 'data', group]
   if (subgroup) {
     pathParts.push(subgroup)
   }
@@ -43,7 +45,8 @@ function safeFindLast<T>(arr: Array<T>, cond: (arg: T) => boolean) {
   return arr.filter(cond).slice(-1)[0]
 }
 
-export class DataLoader implements Data {
+@Injectable()
+export class LawDataProvider implements LawData {
   lands = (category?: string) =>
     getData<LandModel>('lands', undefined, category)
   laws = async (topic: string) => {

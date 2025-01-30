@@ -22,5 +22,9 @@
 		"tailwindcss": "^4.0.0",
 		"vite": "^6.0.11",
 		"vitest": "^3.0.4"
+	},
+	"dependencies": {
+		"chart.js": "^4.4.7",
+		"chartjs-chart-geo": "^4.3.4"
 	}
 }
