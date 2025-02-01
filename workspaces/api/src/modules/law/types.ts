@@ -1,5 +1,5 @@
-import * as Types from "../types";
-import * as gm from "graphql-modules";
+import type * as Types from "../types";
+import type * as gm from "graphql-modules";
 export namespace LawModule {
   interface DefinedFields {
     Land: 'abbr' | 'bday' | 'name';

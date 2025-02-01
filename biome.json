@@ -1,4 +1,7 @@
 {
+  "files": {
+    "ignore": ["**/types/*.ts", "**/*types.ts"]
+  },
   "formatter": {
     "indentStyle": "space"
   },
@@ -11,9 +14,6 @@
       "semicolons": "asNeeded"
     },
     "jsxRuntime": "transparent"
-  },
-  "linter": {
-    "ignore": ["**/*types.ts"]
   },
   "overrides": [
     {

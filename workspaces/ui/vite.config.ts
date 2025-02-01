@@ -2,7 +2,11 @@ import { defineConfig } from 'vitest/config'
 import { sveltekit } from '@sveltejs/kit/vite'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
+const config = defineConfig({
+  optimizeDeps: {
+    exclude: ['@urql/svelte'],
+  },
+
   plugins: [sveltekit(), tailwindcss()],
 
   preview: {
@@ -23,3 +27,5 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{js,ts}'],
   },
 })
+
+export default config

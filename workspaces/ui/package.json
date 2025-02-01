@@ -1,30 +1,34 @@
 {
-	"name": "@politistats/ui",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^4.0.0",
-		"@sveltejs/kit": "^2.16.1",
-		"@sveltejs/vite-plugin-svelte": "^5.0.3",
-		"@tailwindcss/vite": "^4.0.0",
-		"svelte": "^5.19.4",
-		"svelte-check": "^4.1.4",
-		"tailwindcss": "^4.0.0",
-		"vite": "^6.0.11",
-		"vitest": "^3.0.4"
-	},
-	"dependencies": {
-		"chart.js": "^4.4.7",
-		"chartjs-chart-geo": "^4.3.4"
-	}
+  "name": "@politistats/ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "graphql-codegen",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test": "npm run test:unit -- --run",
+    "test:unit": "vitest"
+  },
+  "dependencies": {
+    "@urql/svelte": "^4.2.2",
+    "chart.js": "^4.4.7",
+    "chartjs-chart-geo": "^4.3.4",
+    "svelte": "^5.19.4",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/client-preset": "^4.6.0",
+    "@sveltejs/adapter-auto": "^4.0.0",
+    "@sveltejs/kit": "^2.16.1",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/geojson": "^7946.0.16",
+    "svelte-check": "^4.1.4",
+    "vite": "^6.0.11",
+    "vitest": "^3.0.4"
+  }
 }
